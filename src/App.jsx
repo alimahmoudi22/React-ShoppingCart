@@ -17,7 +17,7 @@ function App() {
 
   const [shopData,setShopData] = useState([])
   useEffect(() => {
-    fetch('../products.json')
+    fetch('https://react-shoppingcart-5f932-default-rtdb.firebaseio.com/products.json')
     .then((res) => res.json())
     .then((data) => {
       setShopData(data)})
